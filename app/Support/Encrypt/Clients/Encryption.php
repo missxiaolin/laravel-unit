@@ -10,9 +10,12 @@ namespace App\Support\Encrypt\Clients;
 
 
 use App\Support\Encrypt\ClientInterface;
+use xiaolin\Enum\Common\InstanceTrait;
 
 class Encryption implements ClientInterface
 {
+
+    use InstanceTrait;
 
     public $str = "111021";
     public $key = 'APPYJJ-PHONE-LAZY';
