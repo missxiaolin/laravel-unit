@@ -18,7 +18,7 @@ class JwtAuth
     );
 
     //使用HMAC生成信息摘要时所使用的密钥
-    private static $key = '4ca2058adce401da';
+    private static $key = '2ca2058a3ces01d1';
 
     /**
      * 获取jwt token
