@@ -26,7 +26,7 @@ class RoleController extends BaseController
      * @param RoleListForm $form
      * @param RoleRepository $repository
      * @return \Illuminate\Http\JsonResponse
-     * @throws \App\Exceptions\CodeException
+     * @throws \Lin\Src\Exceptions\CodeException
      * @throws \ReflectionException
      * @throws \xiaolin\Enum\Exception\EnumException
      */
@@ -58,7 +58,7 @@ class RoleController extends BaseController
      * @param RoleAddForm $form
      * @param RoleRepository $repository
      * @return \Illuminate\Http\JsonResponse
-     * @throws \App\Exceptions\CodeException
+     * @throws \Lin\Src\Exceptions\CodeException
      * @throws \ReflectionException
      * @throws \xiaolin\Enum\Exception\EnumException
      */
@@ -77,7 +77,7 @@ class RoleController extends BaseController
      * @param RoleInfoForm $form
      * @param RoleRepository $repository
      * @return \Illuminate\Http\JsonResponse
-     * @throws \App\Exceptions\CodeException
+     * @throws \Lin\Src\Exceptions\CodeException
      * @throws \ReflectionException
      * @throws \xiaolin\Enum\Exception\EnumException
      */
@@ -96,7 +96,7 @@ class RoleController extends BaseController
      * @param RoleDelForm $form
      * @param RoleRepository $repository
      * @return \Illuminate\Http\JsonResponse
-     * @throws \App\Exceptions\CodeException
+     * @throws \Lin\Src\Exceptions\CodeException
      * @throws \ReflectionException
      * @throws \xiaolin\Enum\Exception\EnumException
      */
@@ -115,7 +115,7 @@ class RoleController extends BaseController
      * @param RoleSearchForm $form
      * @param RoleRepository $repository
      * @return \Illuminate\Http\JsonResponse
-     * @throws \App\Exceptions\CodeException
+     * @throws \Lin\Src\Exceptions\CodeException
      * @throws \ReflectionException
      * @throws \xiaolin\Enum\Exception\EnumException
      */
@@ -135,6 +135,7 @@ class RoleController extends BaseController
      * @param RoleRepository $repository
      * @return \Illuminate\Http\JsonResponse
      * @throws \App\Exceptions\CodeException
+     * @throws \Lin\Src\Exceptions\CodeException
      * @throws \ReflectionException
      * @throws \xiaolin\Enum\Exception\EnumException
      */
