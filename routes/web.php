@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::any('/index/index', 'IndexController@index')->name('index.index');
 Route::any('/index/timeout', 'IndexController@timeout')->name('index.timeout');
 Route::any('/index/test/exception', 'IndexController@testException')->name('index.test.exception');
+
+
+Route::any('/iot-dqs/api/cabinet/available', 'IndexController@device')->name('index.device');

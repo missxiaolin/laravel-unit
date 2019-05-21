@@ -40,4 +40,19 @@ class IndexController extends Controller
             dd($ex->getMessage());
         }
     }
+
+    public function device()
+    {
+        $json = [
+            'success' => true,
+            'errorCode' => 100000,
+            'errorMessage' => 'error',
+            'model' => [
+                'online' => 1,
+                'update' => 0,
+                'hasAvailableBattery' => 1
+            ]
+        ];
+        return response()->json($json);
+    }
 }
