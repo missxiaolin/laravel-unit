@@ -1,5 +1,44 @@
 <?php
 
+if (!function_exists('ding_env')) {
+
+    /**
+     * @return bool|DingTalk
+     */
+    function ding_env()
+    {
+
+        $env = app('config')['app.env'];
+        $config = array_get(app('config'), 'custom.ding.' . $env, []);
+
+        if (!count($config)) {
+            return false;
+        }
+
+        if (array_get($config, 'enabled', false) == false) {
+            return false;
+        }
+
+        $arguments = func_get_args();
+        $dingTalk = new \DingNotice\DingTalk(['default' => $config]);
+
+        if (empty($arguments)) {
+            return $dingTalk;
+        }
+
+        if (is_string($arguments[0])) {
+            $robot = $arguments[1] ?? 'default';
+            try {
+                return $dingTalk->with($robot)->text($arguments[0]);
+            } catch (\Exception $ex) {
+                return false;
+            }
+
+        }
+
+    }
+}
+
 if (!function_exists('api_response')) {
 
     /**
